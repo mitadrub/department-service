@@ -1,4 +1,9 @@
 package com.department.departmentservice.repository;
 
-public class DepartmentRepository {
+import com.department.departmentservice.entity.Department;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface DepartmentRepository extends JpaRepository<Department, Long> {
 }
